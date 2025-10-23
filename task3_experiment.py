@@ -7,8 +7,8 @@ plt.rcParams['axes.unicode_minus'] = False
 
 np.random.seed(42)
 
-m1 = np.array([-5, 0])
-m2 = np.array([0, 5])
+m1 = np.array([1, 0])
+m2 = np.array([0, 1])
 cov = np.eye(2)
 
 X1 = np.random.multivariate_normal(m1, cov, 200)
@@ -65,5 +65,5 @@ axes[2].set_ylabel('Loss')
 axes[2].grid(True)
 
 plt.tight_layout()
-plt.savefig('task2_results.png', dpi=150)
+plt.savefig('task3_results.png', dpi=150)
 plt.show()

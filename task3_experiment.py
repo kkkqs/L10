@@ -36,7 +36,9 @@ gd_train_acc = np.mean(gd_model.predict(X_train) == y_train)
 gd_test_acc = np.mean(gd_model.predict(X_test) == y_test)
 
 print(f"广义逆 - 训练集准确率: {pi_train_acc:.4f}, 测试集准确率: {pi_test_acc:.4f}")
+print(f"广义逆分类面参数: w = {pi_model.w}")
 print(f"梯度下降 - 训练集准确率: {gd_train_acc:.4f}, 测试集准确率: {gd_test_acc:.4f}")
+print(f"梯度下降分类面参数: w = {gd_model.w}")
 
 fig, axes = plt.subplots(1, 3, figsize=(15, 4))
 
